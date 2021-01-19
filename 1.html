@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title> functions Parameter</title>
+	<script>
+
+		function fullname(fname = "john",lname = "worden"){
+			var a = fname + "  -  "+ lname;
+
+			return a;
+		}
+		var fn = fullname("john","worden");
+		document.write(fn);
+
+		function sum(math,pysics,chemistry){
+			var s = math + pysics + chemistry;
+			return s;
+		}
+
+		var total = sum (76,85,90);
+		document.write(total + " </br> "); 
+
+		function percentage(tt){
+			var per = tt/300 * 100;
+			document.write(per);
+			//return per;
+		}
+
+		var total = sum(80,80,80);
+		percentage(total);
+
+		
+	</script>
+</head>
+<body>
+<h1>...............Functions Value Return.........</h1>
+
+
+</body>
