@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>JavaScript Class keyword with Static Method </title>
+</head>
+<body>
+<p>Output:</p>
+<p id="value1"></p>
+<h1>java script Classes</h1>
+<script>
+class book {
+constructor(name) {
+this.bookname = name;
+}
+static first(para) {
+return " I have a " + para.bookname+ " book";
+}
+}
+newbook = new book("Harry Potter")
+document.getElementById('value1').innerHTML = book.first(newbook);
+
+</script>
+</body>
+</html>
