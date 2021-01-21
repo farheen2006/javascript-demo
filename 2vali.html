@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>ValidateForm rangeOverflow </title>
+</head>
+<body>
+<p>Output:</p>
+<p id="val2"></p>
+<script type="text/javascript">
+function firstfunc(){
+var str = "";
+if (document.getElementById('val1'). validity.rangeOverflow) {
+str = "Value must be less than 50";
+}else {
+str = "Input OK";
+}
+document.getElementById('val2').innerHTML = str;
+}
+</script>
+<input id="val1" type="number" max="50">
+<button onclick="firstfunc()">OK</button>
+</body>
+</html>

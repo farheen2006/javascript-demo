@@ -1,0 +1,21 @@
+<html>
+<head>
+<title> ValidateForm checkValidity() </title>
+</head>
+<body>
+<p>Output:</p>
+<p id="val2"></p>
+<script type="text/javascript">
+function firstfunc(){
+var gain= document.getElementById('val1');
+if (!gain.checkValidity()) {
+document.getElementById('val2').innerHTML = gain.validationMessage;
+}else {
+document.getElementById('val2').innerHTML= 'Input OK';
+}
+}
+</script>
+<input id="val1" type="number" name="val1" min="30" max="50" required>
+<button onclick="firstfunc()">OK</button>
+</body>
+</html>
