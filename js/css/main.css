@@ -1,0 +1,38 @@
+div#header{
+	padding: 20px; 
+  text-align: center; 
+  background:aqua;
+
+  color: red
+
+}
+
+div#menu >ul > li {
+	padding: 6px 8px 6px 16px;
+  text-align: center;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+
+}   
+    
+}
+div#menu >ul > li {
+	paddding:5px;
+}
+div#sidebar> ul >li{
+	flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+	
+
+div.footer> {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
