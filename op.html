@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>object property in JavaScript Object</title>
+</head>
+<body>
+<p>Output:</p>
+<p id="assig"></p>
+<p id="Demo1"></p>
+<script type="text/javascript">
+var Car = {
+Name: "BMW",
+Engine: "3000cc",
+Color: "Blue",
+};
+//Car.Price= "85Lac.";//Adding property in JavaScript Object
+//document.getElementById("assig").innerHTML= "I have " + Car.Name+" Car<br/>"+ "Color is "+Car.Color;
+//document.getElementById("Demo1").innerHTML= Car.Price +" Price";
+
+//Car.Name= "Range Rover.";//Overwriting property in JavaScript Object
+//document.getElementById("assig").innerHTML= "I have " + Car.Name+" Car<br/>"+ "Color is "+Car.Color;
+
+delete Car.Color;//Deleting property in JavaScript Object
+document.getElementById("assig").innerHTML= "I have " + Car.Name+" Car<br/>"+ "Color is "+Car.Color;
+
+
+</script>
+
+</body>
+</html>
