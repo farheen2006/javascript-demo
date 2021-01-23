@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>JavaScript Lowest Array value </title>
+</head>
+<body>
+<p>Output:</p>
+<p id="assig"></p>
+<p id="Value1"></p>
+<script type="text/javascript">
+var values = [10, 1, 6, 100, 4, 3];
+document.getElementById("assig").innerHTML= "Number Array Output: "+ values;
+//With Compare Function
+function secondfunc(){
+values.sort(function(First, Second){
+return First - Second
+});
+document.getElementById("Value1").innerHTML= "Lowest Number in Array Output: "+ values[0];
+
+}
+secondfunc();
+</script>
+
+</body>
+</html>
+
+var values = [10, 1, 6, 100, 4, 3];
+document.getElementById("assig").innerHTML= "Number Array Input: "+ values;
+//With Compare Function
+function secondfunc(){
+values.sort(function(First, Second){
+return Second - First
+});
+document.getElementById("Value1").innerHTML= "Highest Number in Array Output: "+ values[0];
+
+}
+secondfunc();

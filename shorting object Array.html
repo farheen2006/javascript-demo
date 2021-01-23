@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>JavaScript Sorting Object Array value </title>
+</head>
+<body>
+<p>Output:</p>
+<p id="assig"></p>
+<p id="Value1"></p>
+<script type="text/javascript">
+var values = [
+{Comp:"Python", Year:1991},
+{Comp:"Flask", Year:1991},
+{Comp: "Django", Year:1991}
+];
+
+document.getElementById("assig").innerHTML = "Input:<br/> " +
+values[0].Comp + " " + values[0].Year + "<br>" +
+values[1].Comp + " " + values[1].Year + "<br>" +
+values[2].Comp + " " + values[2].Year;
+
+function secondfunc(){
+values.sort(function(First, Second){
+return First.Year - Second.Year
+});
+document.getElementById("Value1").innerHTML = "Output:<br/> " +
+values[0].Comp + " " + values[0].Year + "<br>" +
+values[1].Comp + " " + values[1].Year + "<br>" +
+values[2].Comp + " " + values[2].Year;
+}
+secondfunc()
+
+</script>
+
+</body>
+</html>
