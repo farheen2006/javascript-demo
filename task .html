@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title> Task </title>
+    <script>
+       
+        function submitin(){
+            let text1 = document.getElementById("text1").value
+            let text2 = document.getElementById("text2").value
+            let text3 = document.getElementById("text3").value
+            let text4 = document.getElementById("text4").value
+            let text5 = document.getElementById("text5").value
+            let text6 = document.getElementById("text6").value
+
+
+            console.log("test::", text1,text2,text3,text4,text5,text6)
+        }
+        var student=[
+            {username:"farheen ", confirmname:"farheen ", Email:"farheen@gmail.com ", confirmEmail:"farheen2gmail.com ", password:"1234 ",confirmpassword: " 1234"}
+
+        ];
+        console.log(student);
+        
+        
+       
+
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="text1" placeholder="User Name">
+            </td>
+            <td>
+                <input id="text2" placeholder="confirm Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="text3" placeholder="Email">
+            </td>
+            <td>
+                <input id="text4" placeholder="confirm Email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="text5" placeholder="Password">
+            </td>
+            <td>
+                <input id="text6" placeholder="confirm Passwprd">
+            </td>
+        </tr>
+
+    </table>
+    <ul>
+        <button type="button" id="myBtn" onclick="submitin() ">Try it</button>
+        
+    </ul>
+
+    
+</body>
+
+
+</html>
